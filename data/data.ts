@@ -11,14 +11,14 @@ export const projects = {
     },
     {
       title: 'Up-Cycle',
-      description: 'Full-stack booking system to book & manage studio.',
+      description: '"Up-Cycle" a web app that aims in sustainability and efficient waste disposal management through automation of the process.',
       github: 'satviknayak/SCL-2022-AlphaByte',
       img: "https://res.cloudinary.com/nexttrek/image/upload/v1674984983/Portfolio/upcycle_tsms2x.png",
       tags: ['Tailwind, ', ' Django, ',' Razorpay, ',' ChartJs, ',' SQLite']
     },
     {
       title: 'Movie Utopia',
-      description: 'Built with Glassmorphism UI, contains Notes, Textbooks, Video Tutorials and pretty much everything needed for B.E.',
+      description: 'Built with NextJS, Tailwind, Prisma is a web app the store movie and its cast information and takes user rating and reviews.',
       github: 'satviknayak/MovieUtopia',
       img: "https://res.cloudinary.com/nexttrek/image/upload/v1674985021/Portfolio/Movie_Utopia_auprbo.png",
       tags: ['NextJS, ',' Tailwind, ',' PostgreSQL, ',' Prisma']

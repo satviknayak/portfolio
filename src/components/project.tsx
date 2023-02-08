@@ -12,7 +12,7 @@ import { Autoplay } from 'swiper';
 import {projects} from '../../data/data';
 
 export default function Project() {
-  const [active,setActive] = useState();
+  const [active,setActive] = useState(3);
 
   return (
     <div id='project' className='flex flex-col w-full min-h-screen relative'>
