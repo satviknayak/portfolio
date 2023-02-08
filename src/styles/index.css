@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Chathura&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.scroll-hide::-webkit-scrollbar{
+    display:none;
+}
+.scroll-hide{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.nav-link{
+    @apply relative mx-5 text-slate-500 inline-block transition-all duration-300 ease-in-out ;
+}
+.nav-link:hover{
+    @apply text-slate-100
+}
+.nav-link::before{
+    @apply h-1 absolute -bottom-2 bg-slate-100 opacity-0 transition-all duration-300;
+}
+.nav-link:hover::before{
+    @apply  -bottom-1 opacity-100 ;
+}
+.nav-active{
+    @apply text-slate-100
+}
+
+.card{
+    @apply w-72 cursor-pointer border-b-4 border-slate-700 rounded-md bg-gradient-to-t from-slate-700/40 h-40 m-auto
+    transition-all duration-1000 ease-in-out; 
+}
+.card-active{
+    @apply h-[400px];
+}
+.para{
+    @apply text-slate-100 px-2 py-4 text-[0.9rem];
+}
+.tech-span{
+    @apply rounded-full bg-slate-400 text-white px-3 py-1 mx-1 text-center text-sm;
+}
+.github{
+    @apply text-slate-900 text-5xl bg-slate-300 flex w-fit rounded-full scale-50 transition-all delay-200 duration-700 opacity-0 self-center m-auto mt-8;
+}
+.git-active{
+    @apply scale-90 opacity-100;
+}
+
+.contact{
+    @apply mx-0 mt-[50px] mb-[10px] grid max-w-[640px] self-center;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    column-gap: 40px;
+}
+.contact-info{
+    @apply grid mx-auto max-w-xl w-full list-none;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+
+.about-grid{
+    @apply grid max-w-[800px] md:mx-auto mx-2 mt-12 sm:gap-x-6 p-2 sm:p-8 backdrop-blur-3xl bg-slate-200/10 rounded-xl;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.bg-img{
+    background-image: url('../../public/bg8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/* .react-hack-text {
+    text-align: center;
+    font-size: 60px;
+    color: rgb(79, 79, 79);
+    text-shadow: 0 0 15px rgb(79, 79, 79);
+    font-family: Consolas, Courier, monospace;
+  }
+  
+  .react-hack-text .glow {
+    @apply text-slate-100;
+    text-shadow: 0px 0px 10px rgb(236, 236, 236);
+  }
+  
+  .react-hack-text > span {
+    display: inline-block;
+    padding: 0 1px;
+  } */
+
