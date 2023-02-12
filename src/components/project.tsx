@@ -15,7 +15,7 @@ export default function Project() {
   const [active,setActive] = useState(3);
 
   return (
-    <div id='project' className='flex flex-col w-full min-h-screen relative'>
+    <div id='project' className='flex flex-col w-full pb-20 relative'>
       <Navbar name={'project'}/>
       <Title name='Project' />
       <div className='max-w-5xl self-center mt-10'>
@@ -31,7 +31,7 @@ export default function Project() {
     >
       {projects.projects.map((item,i)=>(
           <SwiperSlide key={i}>
-            <div className='h-[400px] flex'>
+            <div className='h-[420px] flex'>
               <div className={`card ${active===i && 'card-active'} overflow-hidden`}>
                 <div className='relative bg-black'>
                   <img src={item.img} alt={item.title} className={`opacity-60`}/>
@@ -43,7 +43,7 @@ export default function Project() {
                     <span key={i}>{tag}</span>
                   ))}
                 </div>
-                <a href={item.github} className={`github ${active===i&&'git-active'}`}><AiFillGithub/></a>
+                <a href={`https://github.com/${item.github}`} className={`github ${active===i&&'git-active'}`}><AiFillGithub/></a>
               </div>
             </div>
           </SwiperSlide>

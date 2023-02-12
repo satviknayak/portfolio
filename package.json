@@ -10,12 +10,11 @@
   },
   "dependencies": {
     "@formspree/react": "^2.4.1",
-    "framer-motion": "^8.1.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-grid-gallery": "^1.0.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.5.0",
+    "react-simple-typewriter": "^5.0.1",
     "swiper": "^8.4.5"
   },
   "devDependencies": {

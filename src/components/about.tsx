@@ -41,14 +41,16 @@ export default function About() {
       <Navbar name={"about"} />
       <Title name="About" />
       <div className="about-grid">
-        <div className="flex text-slate-200 my-auto">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam eum
-          optio reprehenderit libero quibusdam deleniti, corporis nam doloremque
-          tempora itaque expedita sint, rem a vel eius? Nostrum aliquid eos
-          ipsam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam eum
-          optio reprehenderit libero quibusdam deleniti, corporis nam doloremque
-          tempora itaque expedita sint, rem a vel eius? Nostrum aliquid eos
-          ipsam.
+        <div className="flex text-slate-200 my-auto py-6 text-justify">
+        Enthusiastic and Self-driven Frontend Web developer
+        based in Karnataka, India. Skilled in C/C++, HTML5,
+        CSS3 and Javascript languages. Proficient in building web
+        apps in Nextjs and Django framework. Creative and a
+        supportive team player with a curious and problem
+        solving mindset. Currently, I am pursuing a 3rd year
+        Bachelor of Engineering in Computer Science from N.M.A.M.I.T.
+        I also love photography and photo editing. While not working on
+         a project, you'll find me watching a movie or an Anime.
         </div>
         <div className="flex flex-col">
           <h2 className='text-3xl font-medium text-slate-100 pl-8'>Education</h2>

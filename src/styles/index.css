@@ -37,7 +37,7 @@
     transition-all duration-1000 ease-in-out; 
 }
 .card-active{
-    @apply h-[400px];
+    @apply h-[420px];
 }
 .para{
     @apply text-slate-100 px-2 py-4 text-[0.9rem];
@@ -75,23 +75,18 @@
     background-repeat: no-repeat;
 }
 
-
-
-/* .react-hack-text {
-    text-align: center;
-    font-size: 60px;
-    color: rgb(79, 79, 79);
-    text-shadow: 0 0 15px rgb(79, 79, 79);
-    font-family: Consolas, Courier, monospace;
-  }
-  
-  .react-hack-text .glow {
-    @apply text-slate-100;
-    text-shadow: 0px 0px 10px rgb(236, 236, 236);
-  }
-  
-  .react-hack-text > span {
-    display: inline-block;
-    padding: 0 1px;
-  } */
+.bubble{
+    @apply rounded-full bg-gradient-to-t from-indigo-600 to-blue-600 left-1/2 top-full absolute;
+    height: max(200px);
+    width: max(200px);
+    animation: animate-bubble 1.5s ease-in-out infinite;
+}
+@keyframes animate-bubble{
+    from,to {
+        transform: translate(-50%,0%);
+    }
+    50%{
+        transform: translate(-50%,-30%);
+    }
+}
 
