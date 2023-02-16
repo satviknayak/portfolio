@@ -1,29 +1,15 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Title from './Title'
 import Navbar from './navbar'
 import { stack } from '../../data/data'
 
 export default function Skill() {
 
-  const wrapper = document.getElementById("bubble-wrapper")
-
-  const animatebubble = (x: number) => {
-    const bubble = document.createElement("div")
-    bubble.className = 'bubble'
-    bubble.style.left = `${x}px`
-    wrapper?.appendChild(bubble)
-    setTimeout(()=>wrapper?.removeChild(bubble),1500)
-  }
-
-  useEffect(()=>{window.onmousemove = e => animatebubble(e.clientX)})
-  
-
-
   return (
-    <div id='skill' className='flex flex-col w-full pb-20 sm:pb-0 relative'>
+    <div id='skill' className='flex flex-col w-full pb-20 relative'>
       <Navbar name={'skill'}/>
       <Title name='Skills' />
-      <div className='flex flex-col max-w-[800px] w-fit mx-auto mt-4 sm:mt-16 backdrop-blur-sm z-10'>
+      <div id='skilldiv' className='flex flex-col max-w-[800px] w-fit mx-auto mt-4 sm:mt-16 backdrop-blur-sm rounded-md bg-slate-500/20 z-10'>
         <div className='py-4 px-4 flex-col flex'>
           <h2 className='text-2xl text-slate-200'>Languages</h2>
           <div className='flex flex-wrap'>
@@ -49,7 +35,6 @@ export default function Skill() {
           </div>
         </div>
       </div>
-      <div id='bubble-wrapper' className='hidden sm:flex w-full h-28 overflow-hidden pointer-events-none relative'></div>
     </div>
   )
 }

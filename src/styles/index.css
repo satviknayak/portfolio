@@ -65,7 +65,7 @@
 
 
 .about-grid{
-    @apply grid max-w-[800px] md:mx-auto mx-2 mt-12 sm:gap-x-6 p-2 sm:p-8 backdrop-blur-3xl bg-slate-200/10 rounded-xl;
+    @apply grid max-w-[800px] md:mx-auto mx-2 mt-12 sm:gap-x-6 p-2 sm:p-8 backdrop-blur-md bg-slate-200/10 rounded-xl;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 }
 .bg-img{
@@ -74,19 +74,3 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-
-.bubble{
-    @apply rounded-full bg-gradient-to-t from-indigo-600 to-blue-600 left-1/2 top-full absolute;
-    height: max(200px);
-    width: max(200px);
-    animation: animate-bubble 1.5s ease-in-out infinite;
-}
-@keyframes animate-bubble{
-    from,to {
-        transform: translate(-50%,0%);
-    }
-    50%{
-        transform: translate(-50%,-30%);
-    }
-}
-

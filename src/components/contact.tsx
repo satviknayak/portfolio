@@ -4,6 +4,7 @@ import Navbar from './navbar'
 import {BsInstagram,BsLinkedin,BsGithub} from 'react-icons/bs'
 import {FiMail} from 'react-icons/fi'
 import {contact} from '../../data/data'
+import { motion } from 'framer-motion'
 
 import { useForm, ValidationError } from '@formspree/react';
 
@@ -15,10 +16,13 @@ export default function Contact() {
       <Navbar name={'contact'}/>
       <Title name='Contact' />
       <div className='contact'>
-        <div className='hidden sm:flex'>
-        <img className='h-96' src='/contact.svg' alt='contact image'/>
-          
-        </div>
+        < motion.div
+        initial={{scale:0.5,opacity:0}}
+        whileInView={{scale:1,opacity:1}}
+        transition={{delay:1/2}}
+        className='hidden sm:flex'>
+        <img className='h-96' src='/contact.svg' alt='contact image'/>  
+        </motion.div>
           <form onSubmit={handleSubmit} className='p-4 grid text-slate-200'>
             <div>
               <input className='bg-slate-600/40 my-2 rounded-md h-12 w-full border-2 px-4'

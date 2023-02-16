@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react';
+import React,{ useState} from 'react'
 import {AiFillGithub} from 'react-icons/ai'
 
 import Title from './Title'
@@ -32,7 +31,7 @@ export default function Project() {
       {projects.projects.map((item,i)=>(
           <SwiperSlide key={i}>
             <div className='h-[420px] flex'>
-              <div className={`card ${active===i && 'card-active'} overflow-hidden`}>
+              <div className={`card ${active===i && 'card-active'} overflow-hidden backdrop-blur-md`}>
                 <div className='relative bg-black'>
                   <img src={item.img} alt={item.title} className={`opacity-60`}/>
                   <h5 className='absolute bottom-0 p-6 text-3xl text-slate-100 font-medium bg-gradient-to-t from-black to-transparent w-full'>{item.title}</h5>
