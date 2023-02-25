@@ -33,36 +33,39 @@ export default function About() {
 
   
   return (
-    <div
-      id="about"
-      className={`flex flex-col w-full pb-20 relative`}
-    >
+    <div id="about" className={`flex flex-col w-full pb-20 relative`}>
       <Navbar name={"about"} />
       <Title name="About" />
       <div className="about-grid">
         <div className="flex text-slate-200 my-auto py-6 text-justify">
-        Enthusiastic and Self-driven Frontend Web developer
-        based in Karnataka, India. Skilled in C/C++, HTML5,
-        CSS3 and Javascript languages. Proficient in building web
-        apps in Nextjs and Django framework. Creative and a
-        supportive team player with a curious and problem
-        solving mindset. Currently, I am pursuing a 3rd year
-        Bachelor of Engineering in Computer Science from N.M.A.M.I.T.
-        I also love photography and photo editing. While not working on
-         a project, you'll find me watching a movie or an Anime.
+          Frontend Web Developer with a Passion for Technology situated in
+          Karnataka, India. competent in the languages of HTML5, CSS3, and
+          Javascript. capable of creating web applications using the Nextjs and
+          Django frameworks. Imaginative, helpful, and interested in solving
+          problems; team player. I'm currently a third-year student at
+          N.M.A.M.I.T., where I'm studying computer science. I also enjoy taking
+          and editing pictures. When I'm not working on a project, I'm probably
+          watching a movie or an anime.
         </div>
         <div className="flex flex-col">
-          <h2 className='text-3xl font-medium text-slate-100 pl-8'>Education</h2>
+          <h2 className="text-3xl font-medium text-slate-100 pl-8">
+            Education
+          </h2>
           <div>
-            {education?.map((item,index)=>(
-              <motion.div 
-              initial={{y:20,opacity:0}}
-              whileInView={{y:0,opacity:1}}
-              transition={{delay:0.3}}
-              key={index} 
-              className={`mt-4 ml-2 border-l-2 pl-2 py-2`}>
-                <h1 className='text-lg text-slate-200 m-0'>{item.name}</h1>
-                <p className='w-full text-sm text-slate-400/50 gap-4 flex'><span>{item.timeline}</span><span>{item.percentage}</span><span>{item.designation}</span></p>
+            {education?.map((item, index) => (
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.3 }}
+                key={index}
+                className={`mt-4 ml-2 border-l-2 pl-2 py-2`}
+              >
+                <h1 className="text-lg text-slate-200 m-0">{item.name}</h1>
+                <p className="w-full text-sm text-slate-400/50 gap-4 flex">
+                  <span>{item.timeline}</span>
+                  <span>{item.percentage}</span>
+                  <span>{item.designation}</span>
+                </p>
               </motion.div>
             ))}
           </div>

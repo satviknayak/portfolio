@@ -60,7 +60,7 @@ export default function Contact() {
       <hr className='my-4 bg-slate-500/40 max-w-xl w-full self-center'/>
       <div className='contact-info'>
         <li>
-          <a className='' href={`https://linkedin.com/${contact.linkedin}`}><BsLinkedin className='text-3xl mx-auto text-slate-500/40 hover:text-slate-100 cursor-pointer transition-all duration-200 ease-in-out'/></a>
+          <a className='' href={`https://linkedin.com/in/${contact.linkedin}`}><BsLinkedin className='text-3xl mx-auto text-slate-500/40 hover:text-slate-100 cursor-pointer transition-all duration-200 ease-in-out'/></a>
         </li>
         <li>
           <a className='' href={`https://github.com/${contact.github}`}><BsGithub className='text-3xl mx-auto text-slate-500/40 hover:text-slate-100 cursor-pointer transition-all duration-200 ease-in-out'/></a>

@@ -9,6 +9,6 @@
 Portfolio in construction
 
 ### To-Dos
-- [ ] Preloader
+- [x] Preloader
 - [ ] UI fixes
 - [ ] Animations

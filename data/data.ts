@@ -43,7 +43,7 @@ export const stack = {
 
   export const contact = {
     github: 'satviknayak',
-    linkedin: 'satvik-s-nayak-616b6121b',
+    linkedin: 'satviksnayak',
     instagram: '_static.n',
     mail: 'nayaksatvik02@gmail.com'
   };

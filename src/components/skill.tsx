@@ -6,7 +6,7 @@ import { stack } from '../../data/data'
 export default function Skill() {
 
   return (
-    <div id='skill' className='flex flex-col w-full pb-20 relative'>
+    <div id='skill' className='flex flex-col w-full pb-20 relative p-2'>
       <Navbar name={'skill'}/>
       <Title name='Skills' />
       <div id='skilldiv' className='flex flex-col max-w-[800px] w-fit mx-auto mt-4 sm:mt-16 backdrop-blur-sm rounded-md bg-slate-500/20 z-10'>
