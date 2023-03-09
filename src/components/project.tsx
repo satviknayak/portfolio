@@ -16,7 +16,7 @@ export default function Project() {
   return (
     <div id='project' className='flex flex-col w-full pb-20 relative'>
       <Navbar name={'project'}/>
-      <Title name='Project' />
+      <Title name='Projects' />
       <div className='max-w-5xl self-center mt-10'>
       <Swiper
       spaceBetween={50}
